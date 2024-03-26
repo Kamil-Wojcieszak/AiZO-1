@@ -86,7 +86,6 @@ void Menu::showMenu() {
 				Test().test();
 				break;
 			case 9:
-				Test().test();
 				return;
 			default:
 				cout << "Error: wrong option chosen\n";
@@ -95,13 +94,12 @@ void Menu::showMenu() {
 
 		}
 		if (enableChecking && sortedArray != nullptr) {
-			cout << endl;
+			cout << "Array is sorted correctly: " << array.check(sortedArray) << endl;
 			cout << "Sorted by Insertion Sort (for comparison): ";
 			array.printSorted();
 			cout << endl << "Sorted by chosen Algorithm:              : ";
 			array.printCopy();
 
-			cout << "\nArray is sorted correctly: " << array.check(sortedArray) << endl;
 
 			sortedArray = nullptr;
 		}

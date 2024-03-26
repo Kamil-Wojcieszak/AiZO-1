@@ -9,12 +9,16 @@
 
 class Results {
 private:
-	int time;
 	int arraySize;
+	char dataArrangement;
 	std::string algorithmName;
-	std::string parameters;
+	char algorithmParameter;
+	unsigned long long time;
 public:
-	Results(int time, int arraySize, const std::string &algorithmName, const std::string &parameters) : time(time), arraySize(arraySize), algorithmName(algorithmName), parameters(parameters) {}
+
+
+	Results(int arraySize, char dataArrangement, std::string algorithmName,
+			char algorithmParameters, unsigned long long time);
 
 	void save();
 };

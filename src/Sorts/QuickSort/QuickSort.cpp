@@ -23,7 +23,7 @@ int QuickSort::partition(int *array, int left, int right, char pivotPosition) {
 			pivot = array[right];
 			break;
 		case 'd': //random
-			pivot = array[Random::get(0, right)];
+			pivot = array[Random::get(left, right)];
 			break;
 		default:
 			std::cout << "Error: wrong pivot position option chosen";

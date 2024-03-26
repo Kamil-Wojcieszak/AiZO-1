@@ -45,7 +45,6 @@ int Array::load(const string &filename) {
 	}
 	fclose(file);
 
-	sortArray();
 	return 0;
 }
 
@@ -95,6 +94,12 @@ void Array::printCopy() {
 	}
 }
 
+void Array::printOriginal() {
+	for (int i = 0; i < N; i++) {
+		cout << array[i] << " ";
+	}
+}
+
 void Array::generateArray(int size) {
 	N = size;
 	delete[] array;
@@ -103,8 +108,6 @@ void Array::generateArray(int size) {
 	for (int i = 0; i < size; ++i) {
 		array[i] = Random::get(0, 10000);
 	}
-
-	sortArray();
 
 }
 
@@ -122,6 +125,8 @@ void Array::sortArray() {
 }
 
 bool Array::check(int *a1) {
+	sortArray();
+
 	for (int i = 0; i < N; ++i) {
 		if (a1[i] != sortedArray[i])
 			return false;
@@ -157,5 +162,25 @@ int *Array::getArray() {
 
 int Array::getSize() const {
 	return N;
+}
+
+void Array::generateArrayDescending(int size) {
+	N = size;
+	delete[] array;
+
+	array = new int[size];
+	for (int i = N-1; i >= 0; --i) {
+		array[i] = i;
+	}
+}
+
+void Array::generateArrayAscending(int size) {
+	N = size;
+	delete[] array;
+
+	array = new int[size];
+	for (int i = 0; i < size; ++i) {
+		array[i] = i;
+	}
 }
 

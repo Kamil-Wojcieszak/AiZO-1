@@ -46,4 +46,10 @@ public:
 	void printCopy();
 
 	void printSorted();
+
+	void generateArrayDescending(int size);
+
+	void generateArrayAscending(int size);
+
+	void printOriginal();
 };

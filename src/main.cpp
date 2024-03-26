@@ -6,6 +6,15 @@
 #include "Sorts/ShellSort/ShellSort.h"
 
 int main() {
+//
+//	Array array;
+//
+//	array.generateArrayAscending(10);
+//	array.printOriginal();
+//	array.generateArrayDescending(10);
+//	array.printOriginal();
 	Menu menu;
 	menu.showMenu();
+
+
 }
