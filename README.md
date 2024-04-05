@@ -1,8 +1,4 @@
-
-
-This repository contains implementations of various sorting algorithms in C++.
-
----
+# Implementation of various sorting algorithms in C++.
 
 ## Array
 
