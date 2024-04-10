@@ -16,8 +16,7 @@ void Test::test() {
 	Array array;
 	Time time;
 
-	vector<char> arrangements = {'n', 'a', 'd'};
-//	vector<int> arraySizes = {100, 200, 500, 1000, 2000, 5000, 10000};
+	vector<char> arrangements = {/*'n', 'a',*/ 'd'};
 	vector<int> arraySizes = {1000, 2000, 5000, 10000, 20000, 50000, 100000};
 
 

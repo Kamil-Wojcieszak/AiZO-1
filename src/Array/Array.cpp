@@ -169,8 +169,8 @@ void Array::generateArrayDescending(int size) {
 	delete[] array;
 
 	array = new int[size];
-	for (int i = N-1; i >= 0; --i) {
-		array[i] = i;
+	for (int i = 0, j = N - 1; i < N; i++) {
+		array[i] = j--;
 	}
 }
 
